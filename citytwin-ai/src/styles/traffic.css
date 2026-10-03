@@ -1,0 +1,934 @@
+.traffic-page{
+    padding:30px;
+    background-color: rgba(13, 13, 25, 0.75);
+    min-height:100vh;
+    
+    margin-top: 10px;
+}
+
+
+.traffic-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.traffic-header h1{
+    font-size:30px;
+    color:#fbfbfc;
+}
+
+.traffic-header p{
+    margin-top:8px;
+    color:#6b7280;
+}
+
+.traffic-status{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:600;
+    color:#10b981;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.live-dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#10b981;
+}
+
+
+
+.traffic-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.traffic-card{
+    background-color: rgba(0, 0, 0, 0.624);
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(252, 251, 251, 0.657);
+    border: solid 1px white;
+}
+
+.traffic-card h4{
+    color:#e8ebef;
+    margin-bottom:12px;
+}
+
+.traffic-card h2{
+    font-size:30px;
+}
+
+.traffic-map-card{
+
+    margin-top:30px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.map-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+    color: black;
+
+}
+
+.map-header p{
+
+    color:black;
+
+    margin-top:5px;
+
+}
+
+.refresh-btn{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.refresh-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.map-container{
+
+    width:100%;
+
+    height:450px;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    background:black;
+
+    position:relative;
+
+}
+
+.map-placeholder{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.map-placeholder h3{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.map-placeholder p{
+
+    color:#666;
+
+}
+
+.marker{
+
+    position:absolute;
+
+    font-size:30px;
+
+}
+
+.accident{
+
+    top:80px;
+
+    left:180px;
+
+}
+
+.traffic{
+
+    top:220px;
+
+    right:200px;
+
+}
+
+.signal{
+
+    bottom:100px;
+
+    left:300px;
+
+}
+
+.road{
+
+    bottom:150px;
+
+    right:150px;
+
+}
+
+
+.traffic-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+.chart-card{
+
+    background-color: rgba(0, 0, 0, 0.848);
+    border: solid white 1px;
+    color: white;
+    border-radius:12px;
+    padding:20px;
+}
+
+.chart-card h2{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.signal-card{
+
+    background-color: rgba(0, 0, 0, 0.848);
+    border: solid white 1px;
+    color: white;
+    border-radius:12px;
+    padding:20px;
+
+}
+.signal-card h2{
+  color: rgb(255, 89, 0);
+}
+.signal-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.signal-row:last-child{
+
+    border:none;
+
+}
+
+.signal-light{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+}
+
+.green{
+
+    background:#22c55e;
+
+}
+
+.red{
+
+    background:#ef4444;
+
+}
+
+.yellow{
+
+    background:#facc15;
+
+}
+/* Road Closures */
+
+.road-card,
+.route-card {
+    background-color: rgba(0, 0, 0, 0.679);
+    color: white;
+    border-radius:12px;
+    border: solid rgba(0, 0, 0, 0.46) 2px;
+    box-shadow:0 0 5px white;
+    padding: 22px;
+    
+}
+
+.road-card h2,
+.route-card h2 {
+  margin: 0;
+  font-size: 20px;
+  color: rgba(255, 102, 0, 0.883);
+}
+
+.road-card p,
+.route-card p {
+  color: #ced3de;
+  font-size: 14px;
+}
+
+.closure-list {
+  margin-top: 18px;
+}
+
+.closure-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.closure-row:last-child {
+  border-bottom: none;
+}
+
+.closure-row h4 {
+  margin: 0 0 5px;
+}
+
+.closure-row p {
+  margin: 0;
+}
+
+.road-status {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.closed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.partial {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.restricted {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+
+/* AI Route Recommendation */
+
+.route-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.ai-badge {
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+.route-alert {
+  margin-top: 20px;
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.577);
+  border-radius: 8px;
+}
+
+.route-alert p {
+  margin: 6px 0 0;
+}
+
+.route-details {
+  margin-top: 20px;
+}
+
+.route-point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.route-point small {
+  color: #9ca3af;
+  font-size: 10px;
+}
+
+.route-point h4 {
+  margin: 3px 0 0;
+}
+
+.route-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.route-dot.start {
+  background: #ef4444;
+}
+
+.route-dot.end {
+  background: #22c55e;
+}
+
+.route-line {
+  width: 2px;
+  height: 25px;
+  background: #d1d5db;
+  margin-left: 5px;
+}
+
+.time-saved {
+  margin-top: 22px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-saved span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.time-saved strong {
+  color: #16a34a;
+  font-size: 22px;
+}
+/* =========================
+   LIVE TRAFFIC INCIDENTS
+========================= */
+
+.incidents-card {
+
+    background-color: rgb(13, 13, 25);
+    color: white;
+    border-radius:12px;
+    border: solid rgba(0, 0, 0, 0.46) 2px;
+    box-shadow:0 0 5px white;
+    padding: 22px;
+    margin-top: 25px;
+}
+
+.incidents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.incidents-header h2 {
+  margin: 0;
+  font-size: 21px;
+  color: #f0f3f6;
+}
+
+.incidents-header p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #e0e5ee;
+}
+
+.view-all-btn {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #2563eb;
+  padding: 8px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.incident-list {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.incident-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.incident-info {
+  flex: 1;
+}
+
+.incident-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.incident-title h4 {
+  margin: 0;
+  color: #e0e5ee;
+}
+
+.incident-info h4 {
+  margin: 7px 0;
+  font-size: 14px;
+  color: #e0e5ee;
+}
+
+.incident-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #e0e5ee;
+}
+
+.incident-time {
+  font-size: 13px;
+  color: #e0e5ee;
+  white-space: nowrap;
+}
+
+/* Incident Status */
+
+.incident-status {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: 5px;
+}
+
+.incident-status.high {
+  background: #fee2e2;
+  color: #fe0808;
+}
+
+.incident-status.medium {
+  background: #fef3c7;
+  color: #d96309;
+}
+
+.incident-status.low {
+  background: #dcfce7;
+  color: #0c8639;
+}
+.traffic-map-card {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/* Keep navigation above the Leaflet map */
+.traffic-map-card {
+    position: relative;
+    z-index: 1;
+}
+
+.map-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Leaflet should stay below the navigation */
+.leaflet-container {
+    z-index: 1 !important;
+}
+
+.leaflet-pane,
+.leaflet-control {
+    z-index: 1 !important;
+}
+.traffic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.traffic-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+.signalname{
+  color: rgb(248, 245, 245);
+  padding: 0;
+  text-align: left;
+}
+
+.speed{
+  color: rgb(215, 237, 17);
+}
+.traffic-header p {
+  margin: 6px 0 0;
+  color: #faf6f6;
+  font-size: 14px;
+}
+
+.traffic-header-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #060700;
+}
+
+.traffic-header-status strong {
+  display: block;
+  font-size: 14px;
+}
+
+.traffic-header-status p {
+  margin: 3px 0 0;
+  font-size: 11px;
+  color: #888;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.chart-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.chart-header p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.live-label {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px 9px;
+  border-radius: 10px;
+  background: #e8f5e9;
+  color: #2e7d32;
+
+}
+
+.chart-loading {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+.road-loading {
+  padding: 30px;
+  text-align: center;
+  color: #777;
+}
+
+.no-closures {
+  padding: 25px 10px;
+  text-align: center;
+}
+
+.no-closures h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.no-closures p {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+.route-card {
+  background: #000000;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.route-loading {
+  padding: 30px;
+  text-align: center;
+  color: #777;
+}
+
+.recommended-route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px;
+
+  margin-bottom: 18px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.route-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.recommended-route h3 {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.recommended-route p {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.route-score {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.route-score span {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #777;
+}
+
+.route-alternatives h4 {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.alternative-route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.alternative-route strong {
+  font-size: 13px;
+}
+
+.alternative-route p {
+  margin: 3px 0 0;
+  color: #777;
+  font-size: 11px;
+}
+
+.alternative-route > span {
+  font-size: 11px;
+  color: #777;
+} 
+.incidents-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.incident-loading {
+  padding: 30px;
+  text-align: center;
+  color: #777;
+}
+
+.no-incidents {
+  padding: 25px;
+  text-align: center;
+}
+
+.no-incidents h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.no-incidents p {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.incident-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.incident-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
+
+.incident-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.incident-info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.incident-info p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.incident-icon {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-weight: 700;
+}
+
+.incident-icon.low {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.incident-icon.moderate {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.incident-icon.high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.incident-severity {
+  font-size: 11px;
+  font-weight: 600;
+
+  padding: 5px 9px;
+
+  border-radius: 10px;
+}
+
+.incident-severity.low {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.incident-severity.moderate {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.incident-severity.high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.closure-row small {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+  color: #999;
+}
+.closure-row h4 {
+    margin: 0 0 5px;
+    color: #cf0e0e;
+    font-size: 14px;
+}

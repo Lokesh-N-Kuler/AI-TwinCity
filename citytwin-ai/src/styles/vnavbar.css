@@ -1,0 +1,50 @@
+.vsidebar{
+
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    width: 100%;
+    position: fixed;
+     z-index: 9999;
+    bottom: 0;
+    /*background-color: rgb(13, 13, 25);*/
+    padding:10px;
+    
+    margin-top:10px ;
+    justify-content: left;
+    text-align: left;
+    height: 30px;
+    background-color: rgb(30, 28, 28);
+    margin-left:-16px;
+    border: solid 2px whitesmoke;
+}
+
+.vsidebar button{
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    width: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.183);
+    background-color: rgb(13, 13, 25);
+    color: white;
+    border-radius:5px;
+    margin-left: 15px;
+    align-items:center;
+    box-shadow:0px 0px 2px rgb(225, 26, 26);
+    transition:.2s;
+   
+}
+.vsidebar button:hover{
+    /*background-color:#2563EB;
+    color:white;
+    scale:1.01;*/
+    background-color:white ;
+    color:red;
+
+}
+.vsidebar button.active{
+    background:#f60136fc;
+    color:white;
+    box-shadow:0px 0px 2px rgb(252, 252, 252);
+
+}

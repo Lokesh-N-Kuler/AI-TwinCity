@@ -1,0 +1,8 @@
+body{
+    background-color: rgba(13, 13, 25, 0.983);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+    scroll-behavior:smooth;
+
+}

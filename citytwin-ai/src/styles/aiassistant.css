@@ -1,0 +1,283 @@
+.ai-assistant-page {
+    padding: 40px 30px;
+    background-color: rgba(13, 13, 25, 0.983);
+    min-height: 100vh;
+    margin-top: 10px;
+}
+
+/* HEADER */
+
+.ai-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ai-header h1 {
+  margin: 0;
+  color: #f0f2f6;
+  font-size: 30px;
+}
+
+.ai-header p {
+  margin-top: 8px;
+  color: #fa1904da;
+}
+
+.ai-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: green;
+}
+
+.ai-status-dot {
+  width: 10px;
+  height: 10px;
+  background: #fd1003;
+  border-radius: 50%;
+}
+
+/* STATUS CARDS */
+
+.ai-status-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ai-status-card {
+  border: solid 1px white;
+  background: black;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ai-status-card p {
+  margin: 0;
+  color: #f8f5f5;
+  font-size: 14px;
+}
+
+.ai-status-card h3 {
+  margin: 12px 0 6px;
+  font-size: 22px;
+}
+
+.ai-status-card span {
+  color: #efa906;
+  font-size: 12px;
+}
+
+.blue {
+  color: #2563eb;
+}
+
+.green {
+  color: #0a0d00;
+}
+
+.orange {
+  color: #f59e0b;
+}
+
+.red {
+  color: #f80505;
+}
+
+/* MAIN SECTION */
+
+.ai-main-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* SUGGESTED QUESTIONS */
+
+.suggested-card {
+  background: black;
+  border: solid 1px white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.suggested-card h2 {
+  margin: 0;
+  color: #f3f4f5;
+}
+
+.suggested-card p {
+  color: #ea0f07e3;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.question-button {
+  text-align: left;
+  background: #0458ad;
+  border: 1px solid #e5e7eb;
+  padding: 13px;
+  border-radius: 8px;
+  color: #f3f4f6;
+  cursor: pointer;
+}
+
+.question-button:hover {
+  border-color: #f8f9fa;
+  background: #2d69b8;
+}
+
+/* CHAT */
+
+.chat-card {
+  background: black;
+  border: solid 1px white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.chat-ai-icon {
+  width: 42px;
+  height: 42px;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.chat-header h2 {
+  margin: 0;
+  color: #f3f0ef;
+  font-size: 18px;
+}
+
+.chat-header span {
+  color: #16a34a;
+  font-size: 12px;
+}
+
+.chat-messages {
+  height: 400px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #000305;
+}
+
+.message {
+  max-width: 75%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.ai-message {
+  background: rgb(142, 137, 199);
+  color: #0b0b0b;
+  align-self: flex-start;
+  border: 1px solid #e5e7eb;
+}
+
+.user-message {
+  background: #2563eb;
+  color: white;
+  align-self: flex-end;
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.chat-input-area input:focus {
+  border-color: #2563eb;
+}
+
+.chat-input-area button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chat-input-area button:hover {
+  background: #1d4ed8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .ai-status-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ai-main-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-assistant-page {
+    padding: 25px 15px;
+  }
+
+  .ai-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .ai-status-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+}
+.chat-input-area button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

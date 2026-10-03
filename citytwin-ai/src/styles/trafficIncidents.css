@@ -1,0 +1,139 @@
+.traffic-incidents {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.incidents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.incidents-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #222;
+}
+
+.incidents-header p {
+  margin: 6px 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.refresh-incidents {
+  border: none;
+  background: #1976d2;
+  color: white;
+  padding: 9px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.refresh-incidents:hover {
+  background: #1565c0;
+}
+
+.incident-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.incident-card {
+  display: flex;
+  gap: 15px;
+  padding: 16px;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.incident-icon {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef5ff;
+  color: #1976d2;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.incident-content {
+  flex: 1;
+}
+
+.incident-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.incident-title-row h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.live-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 10px;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.incident-description {
+  margin: 6px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.incident-road {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.incident-details {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+}
+
+.incident-status {
+  padding: 30px;
+  text-align: center;
+  color: #777;
+}
+
+.incident-error {
+  padding: 20px;
+  text-align: center;
+  color: #d32f2f;
+  background: #fff5f5;
+  border-radius: 8px;
+}
+
+.incident-footer {
+  text-align: center;
+  margin: 15px 0 0;
+  font-size: 12px;
+  color: #777;
+}

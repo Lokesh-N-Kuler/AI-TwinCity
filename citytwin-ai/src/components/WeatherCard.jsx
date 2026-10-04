@@ -2,7 +2,7 @@ import "../styles/WeatherCard.css";
 import { FaMapMarkerAlt, FaWind, FaTint } from "react-icons/fa";
 import { WiDayCloudy } from "react-icons/wi";
 import { useEffect, useState } from "react";
-import { getWeather } from "../services/WeatherServices";
+import { getWeather } from "../Services/WeatherServices";
 
 function WeatherCard() {
   const [weather, setWeather] = useState(null);

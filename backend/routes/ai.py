@@ -572,11 +572,58 @@ async def chat_with_ai_legacy(
 
 @router.get("/status")
 async def ai_status():
+    async with httpx.AsyncClient(
+        base_url=BACKEND_URL,
+        timeout=15.0
+    ) as client:
+
+        traffic, flood, pollution, emergency = await asyncio.gather(
+            fetch_json(client, "/api/traffic/"),
+            fetch_json(client, "/api/flood/"),
+            fetch_json(client, "/api/pollution/"),
+            fetch_json(client, "/api/emergency/")
+        )
 
     return {
         "status": "online",
-        "geminiConfigured": bool(
-            GEMINI_API_KEY
-        ),
-        "model": GEMINI_MODEL
+        "geminiConfigured": bool(GEMINI_API_KEY),
+        "model": GEMINI_MODEL,
+
+        "traffic": {
+            "value": traffic.get("congestion", "N/A"),
+            "description": (
+                f"Current speed: "
+                f"{traffic.get('currentSpeed', 'N/A')} km/h"
+            )
+        },
+
+        "flood": {
+            "value": flood.get("riskLevel", "N/A"),
+            "description": (
+                f"Risk score: "
+                f"{flood.get('risk_score', 'N/A')}"
+            )
+        },
+
+        "airQuality": {
+            "value": (
+                f"AQI {pollution.get('aqi')}"
+                if pollution.get("aqi") is not None
+                else "N/A"
+            ),
+            "description": pollution.get(
+                "status",
+                "Live air quality data unavailable"
+            )
+        },
+
+        "emergency": {
+            "value": str(
+                emergency.get("stats", {}).get(
+                    "activeIncidents",
+                    "N/A"
+                )
+            ),
+            "description": "Active incidents"
+        }
     }

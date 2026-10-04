@@ -34,7 +34,7 @@ function AIStatusSummary() {
     async function fetchStatus() {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/ai/status`
+          `${import.meta.env.VITE_API_URL || "${import.meta.env.VITE_API_URL}"}/api/ai/status`
         );
 
         if (!response.ok) {

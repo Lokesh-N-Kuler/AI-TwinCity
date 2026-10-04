@@ -1,7 +1,40 @@
 const LATITUDE = 12.9716;
 const LONGITUDE = 77.5946;
 
-const BASE_URL = "https://air-quality-api.open-meteo.com/v1/air-quality";
+const BASE_URL =
+  "https://air-quality-api.open-meteo.com/v1/air-quality";
+
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
+
+// Get pollution data from CityTwin backend
+export async function getAQIData() {
+  const response = await fetch(
+    `${API_URL}/api/pollution/`
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `Failed to fetch pollution data: ${response.status}`
+    );
+  }
+
+  const data = await response.json();
+
+  console.log("POLLUTION DATA:", data);
+
+  return data;
+}
+
+
+// Get AQI from backend
+export async function getAQI() {
+  const data = await getAQIData();
+
+  return data.hourly || [];
+}
+
 
 // Get current Bengaluru air quality
 export async function getCurrentAirQuality() {
@@ -16,13 +49,17 @@ export async function getCurrentAirQuality() {
   const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error(`Air Quality API failed: ${response.status}`);
+    throw new Error(
+      `Air Quality API failed: ${response.status}`
+    );
   }
 
   const data = await response.json();
 
   if (!data.current) {
-    throw new Error("No current air quality data received");
+    throw new Error(
+      "No current air quality data received"
+    );
   }
 
   return {
@@ -50,7 +87,9 @@ export async function getAQIChart() {
   const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error(`AQI chart API failed: ${response.status}`);
+    throw new Error(
+      `AQI chart API failed: ${response.status}`
+    );
   }
 
   const data = await response.json();
@@ -135,8 +174,11 @@ export async function getPollutionByArea() {
 export function getAQIStatus(aqi) {
   if (aqi <= 50) return "Good";
   if (aqi <= 100) return "Moderate";
-  if (aqi <= 150) return "Unhealthy for Sensitive Groups";
+  if (aqi <= 150) {
+    return "Unhealthy for Sensitive Groups";
+  }
   if (aqi <= 200) return "Unhealthy";
   if (aqi <= 300) return "Very Unhealthy";
+
   return "Hazardous";
 }

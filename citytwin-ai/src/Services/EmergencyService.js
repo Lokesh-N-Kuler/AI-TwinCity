@@ -1,3 +1,6 @@
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 let cachedData = null;
 let lastFetchTime = 0;
 
@@ -14,7 +17,7 @@ export async function getEmergencyData() {
   }
 
   const response = await fetch(
-    "http://127.0.0.1:8000/api/emergency/"
+    `${API_URL}/api/emergency/`
   );
 
   if (!response.ok) {

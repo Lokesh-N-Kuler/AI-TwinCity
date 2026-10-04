@@ -11,7 +11,7 @@ function FloodAlerts() {
       setError(false);
 
       const response = await fetch(
-        "http://127.0.0.1:8000/api/flood/"
+        `${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/flood/`
       );
 
       if (!response.ok) {

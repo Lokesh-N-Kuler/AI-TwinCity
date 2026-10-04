@@ -9,7 +9,7 @@ import {
   CartesianGrid,
 } from "recharts";
 
-import { getAQI } from "../Services/AQIservice";
+import { getAQI } from "../services/AQIservice";
 import "../styles/chart.css";
 
 function AQIchart() {

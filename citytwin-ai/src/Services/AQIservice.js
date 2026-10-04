@@ -1,6 +1,9 @@
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 export async function getAQIData() {
   const response = await fetch(
-    "http://127.0.0.1:8000/api/pollution/"
+    `${API_URL}/api/pollution/`
   );
 
   if (!response.ok) {
@@ -13,7 +16,6 @@ export async function getAQIData() {
 
   return data;
 }
-
 
 export async function getAQI() {
   const data = await getAQIData();

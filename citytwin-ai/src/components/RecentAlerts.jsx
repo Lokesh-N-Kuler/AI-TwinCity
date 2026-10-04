@@ -10,7 +10,7 @@ function RecentAlerts() {
     try {
       setError(false);
 
-      const response = await fetch("http://127.0.0.1:8000/api/emergency/");
+      const response = await fetch(`${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/emergency/`);
 
       if (!response.ok) {
         throw new Error("Failed to fetch emergency data");

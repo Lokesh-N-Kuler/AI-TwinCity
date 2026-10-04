@@ -8,7 +8,7 @@ function AIRecommendation() {
   async function fetchTrafficData() {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/api/emergency/"
+        `${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/emergency/`
       );
 
       if (!response.ok) {

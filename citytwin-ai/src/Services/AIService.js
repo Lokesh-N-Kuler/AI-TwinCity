@@ -1,36 +1,24 @@
 const API_URL =
-  "http://127.0.0.1:8000/api/ai";
-
+  `${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/ai`;
 
 export async function sendAIMessage(message) {
-
-  const cleanMessage = String(
-    message || ""
-  ).trim();
-
+  const cleanMessage = String(message || "").trim();
 
   if (!cleanMessage) {
-    throw new Error(
-      "Message cannot be empty."
-    );
+    throw new Error("Message cannot be empty.");
   }
 
+  const response = await fetch(`${API_URL}/chat`, {
+    method: "POST",
 
-  const response = await fetch(
-    `${API_URL}/chat`,
-    {
-      method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
 
-      headers: {
-        "Content-Type": "application/json"
-      },
-
-      body: JSON.stringify({
-        message: cleanMessage
-      })
-    }
-  );
-
+    body: JSON.stringify({
+      message: cleanMessage,
+    }),
+  });
 
   let data = null;
 
@@ -40,9 +28,7 @@ export async function sendAIMessage(message) {
     data = null;
   }
 
-
   if (!response.ok) {
-
     const message =
       data?.detail ||
       `AI request failed (${response.status})`;
@@ -50,17 +36,11 @@ export async function sendAIMessage(message) {
     throw new Error(message);
   }
 
-
-  if (
-    !data ||
-    typeof data.response !== "string"
-  ) {
-
+  if (!data || typeof data.response !== "string") {
     throw new Error(
       "Invalid response received from AI server."
     );
   }
-
 
   return data;
 }

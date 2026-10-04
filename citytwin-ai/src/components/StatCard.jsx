@@ -24,10 +24,10 @@ function StatCard() {
         pollutionResponse,
       ] = await Promise.all([
         fetch(
-          "http://127.0.0.1:8000/api/emergency/"
+          `${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/emergency/`
         ),
         fetch(
-          "http://127.0.0.1:8000/api/flood/"
+          `${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/flood/`
         ),
         fetch(
           "http://127.0.0.1:8000/api/pollution/"

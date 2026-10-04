@@ -7,7 +7,7 @@ import FloodChart from "../components/FloodChart";
 import RiskAreas from "../components/RiskAreas";
 import FloodPrediction from "../components/FloodPrediction";
 import FloodAlerts from "../components/FloodAlerts";
-import { getFloodData } from "../Services/FloodService";
+import { getFloodData } from "../services/FloodService";
 
 import "../styles/flood.css";
 

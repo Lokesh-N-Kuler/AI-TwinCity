@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getRoadClosures } from "../Services/trafficService";
+import { getRoadClosures } from "../services/trafficService";
 
 function RoadClosures() {
   const [closures, setClosures] = useState([]);

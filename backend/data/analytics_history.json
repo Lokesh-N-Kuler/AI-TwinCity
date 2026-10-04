@@ -1,96 +1,5 @@
 [
   {
-    "timestamp": "2026-10-03T20:30:29.201679",
-    "day": "20:30",
-    "traffic": 73,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:30:45.505386",
-    "day": "20:30",
-    "traffic": 73,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:30:49.998821",
-    "day": "20:30",
-    "traffic": 73,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:30:50.174700",
-    "day": "20:30",
-    "traffic": 73,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:31:29.762444",
-    "day": "20:31",
-    "traffic": 77,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:31:45.900681",
-    "day": "20:31",
-    "traffic": 77,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:31:50.383473",
-    "day": "20:31",
-    "traffic": 77,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:31:50.394856",
-    "day": "20:31",
-    "traffic": 77,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:32:27.415503",
-    "day": "20:32",
-    "traffic": 69,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:32:39.510227",
-    "day": "20:32",
-    "traffic": 73,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:32:46.940646",
-    "day": "20:32",
-    "traffic": 73,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:32:46.956475",
-    "day": "20:32",
-    "traffic": 73,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
-    "timestamp": "2026-10-03T20:33:26.867683",
-    "day": "20:33",
-    "traffic": 73,
-    "pollution": 92,
-    "emergency": 0
-  },
-  {
     "timestamp": "2026-10-03T20:33:39.686165",
     "day": "20:33",
     "traffic": 73,
@@ -618,6 +527,650 @@
   {
     "timestamp": "2026-10-04T11:38:04.517319",
     "day": "11:38",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:38:20.360016",
+    "day": "11:38",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:38:20.777789",
+    "day": "11:38",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:38:32.656954",
+    "day": "11:38",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:38:59.933777",
+    "day": "11:38",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:39:17.317097",
+    "day": "11:39",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:39:23.065487",
+    "day": "11:39",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:39:23.456072",
+    "day": "11:39",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:40:01.032722",
+    "day": "11:40",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:40:19.172282",
+    "day": "11:40",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:40:23.842377",
+    "day": "11:40",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:40:23.873417",
+    "day": "11:40",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:41:02.540230",
+    "day": "11:41",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:41:22.867626",
+    "day": "11:41",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:41:24.661438",
+    "day": "11:41",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:41:25.030569",
+    "day": "11:41",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:42:02.596150",
+    "day": "11:42",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:42:22.874437",
+    "day": "11:42",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:42:26.131607",
+    "day": "11:42",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:42:26.162717",
+    "day": "11:42",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:42:39.554206",
+    "day": "11:42",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:43:01.367478",
+    "day": "11:43",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:43:18.713040",
+    "day": "11:43",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:43:22.051819",
+    "day": "11:43",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:43:22.079710",
+    "day": "11:43",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:43:59.434768",
+    "day": "11:43",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:44:16.498743",
+    "day": "11:44",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:44:21.752937",
+    "day": "11:44",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:44:22.172471",
+    "day": "11:44",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:45:05.220516",
+    "day": "11:45",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:45:21.559452",
+    "day": "11:45",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:45:25.466137",
+    "day": "11:45",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:45:26.422130",
+    "day": "11:45",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:46:00.499865",
+    "day": "11:46",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:46:17.599259",
+    "day": "11:46",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:46:22.967240",
+    "day": "11:46",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:46:23.166734",
+    "day": "11:46",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:47:06.180995",
+    "day": "11:47",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:47:24.619921",
+    "day": "11:47",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:47:26.617867",
+    "day": "11:47",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:47:26.686558",
+    "day": "11:47",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:48:06.075484",
+    "day": "11:48",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:48:22.009661",
+    "day": "11:48",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:48:25.307437",
+    "day": "11:48",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:48:25.989791",
+    "day": "11:48",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:49:01.315917",
+    "day": "11:49",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:49:17.513872",
+    "day": "11:49",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:49:22.727864",
+    "day": "11:49",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:49:25.855430",
+    "day": "11:49",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:50:06.853294",
+    "day": "11:50",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:50:22.723565",
+    "day": "11:50",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:50:25.182254",
+    "day": "11:50",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:50:25.587944",
+    "day": "11:50",
+    "traffic": 88,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:51:05.482976",
+    "day": "11:51",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:51:23.043797",
+    "day": "11:51",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:51:26.873310",
+    "day": "11:51",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:51:27.047133",
+    "day": "11:51",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:52:05.442106",
+    "day": "11:52",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:52:21.510624",
+    "day": "11:52",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:52:25.620110",
+    "day": "11:52",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:52:25.649396",
+    "day": "11:52",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:53:05.227694",
+    "day": "11:53",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:53:21.742350",
+    "day": "11:53",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:53:26.001622",
+    "day": "11:53",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:53:26.031938",
+    "day": "11:53",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:54:04.357390",
+    "day": "11:54",
+    "traffic": 81,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:54:21.522817",
+    "day": "11:54",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:54:26.250413",
+    "day": "11:54",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:54:26.280244",
+    "day": "11:54",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:55:05.206730",
+    "day": "11:55",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:55:21.701243",
+    "day": "11:55",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:55:26.257871",
+    "day": "11:55",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:55:26.559180",
+    "day": "11:55",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:56:05.171091",
+    "day": "11:56",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:56:20.932028",
+    "day": "11:56",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:56:25.465303",
+    "day": "11:56",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:56:26.002072",
+    "day": "11:56",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:57:04.822414",
+    "day": "11:57",
+    "traffic": 78,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:57:21.551967",
+    "day": "11:57",
+    "traffic": 78,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:57:26.430205",
+    "day": "11:57",
+    "traffic": 78,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:57:26.604795",
+    "day": "11:57",
+    "traffic": 78,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:58:05.377310",
+    "day": "11:58",
+    "traffic": 78,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:58:20.826470",
+    "day": "11:58",
+    "traffic": 78,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:58:26.580485",
+    "day": "11:58",
+    "traffic": 78,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:58:26.611353",
+    "day": "11:58",
+    "traffic": 78,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:59:04.885934",
+    "day": "11:59",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:59:21.732954",
+    "day": "11:59",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:59:26.992553",
+    "day": "11:59",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T11:59:27.292982",
+    "day": "11:59",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T12:00:09.727044",
+    "day": "12:00",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T12:00:24.885133",
+    "day": "12:00",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T12:00:26.199989",
+    "day": "12:00",
+    "traffic": 85,
+    "pollution": 91,
+    "emergency": 0
+  },
+  {
+    "timestamp": "2026-10-04T12:00:26.505412",
+    "day": "12:00",
     "traffic": 85,
     "pollution": 91,
     "emergency": 0

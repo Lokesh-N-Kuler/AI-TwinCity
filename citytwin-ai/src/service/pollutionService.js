@@ -5,7 +5,7 @@ const BASE_URL =
   "https://air-quality-api.open-meteo.com/v1/air-quality";
 
 const API_URL =
-  import.meta.env.VITE_API_URL || "${import.meta.env.VITE_API_URL}";
+  import.meta.env.VITE_API_URL || import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 
 // Get pollution data from CityTwin backend

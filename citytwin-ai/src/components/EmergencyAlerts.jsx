@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getEmergencyData } from "../services/EmergencyService";
+import { getEmergencyData } from "../Services/EmergencyService";
 
 function EmergencyAlerts() {
   const [alerts, setAlerts] = useState([]);

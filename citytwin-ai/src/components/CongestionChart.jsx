@@ -10,7 +10,7 @@ import {
   CartesianGrid,
 } from "recharts";
 
-import { getCongestionByArea } from "../services/trafficService";
+import { getCongestionByArea } from "../Services/trafficService";
 
 function CongestionChart() {
   const [data, setData] = useState([]);

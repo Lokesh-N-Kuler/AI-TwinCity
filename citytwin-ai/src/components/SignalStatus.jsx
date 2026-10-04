@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getSignalStatus } from "../services/trafficService";
+import { getSignalStatus } from "../Services/trafficService";
 
 function SignalStatus() {
   const [signals, setSignals] = useState([]);

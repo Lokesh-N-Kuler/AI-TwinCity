@@ -10,7 +10,7 @@ import {
 
 import "leaflet/dist/leaflet.css";
 
-import { getEmergencyData } from "../services/EmergencyService";
+import { getEmergencyData } from "../Services/EmergencyService";
 
 function EmergencyMap() {
   const [showMap, setShowMap] = useState(false);

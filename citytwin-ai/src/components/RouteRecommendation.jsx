@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getRouteRecommendation } from "../services/trafficService";
+import { getRouteRecommendation } from "../Services/trafficService";
 
 function RouteRecommendation() {
   const [routeData, setRouteData] = useState(null);

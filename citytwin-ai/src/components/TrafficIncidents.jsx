@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTrafficIncidents } from "../services/trafficService";
+import { getTrafficIncidents } from "../Services/trafficService";
 
 function TrafficIncidents() {
   const [incidents, setIncidents] = useState([]);

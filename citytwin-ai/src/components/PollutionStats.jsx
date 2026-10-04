@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAQIData } from "../services/AQIservice";
+import { getAQIData } from "../Services/AQIservice";
 
 function PollutionStats() {
 

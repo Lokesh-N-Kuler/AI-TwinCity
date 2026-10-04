@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTraffic } from "../services/trafficService";
+import { getTraffic } from "../Services/trafficService";
 
 function TrafficHeader() {
   const [traffic, setTraffic] = useState(null);

@@ -10,7 +10,7 @@ import {
   CartesianGrid,
 } from "recharts";
 
-import { getAQI } from "../Services/AQIservice";
+import { getAQI } from "../service/AQIservice";
 
 import "../styles/pollution.css";
 

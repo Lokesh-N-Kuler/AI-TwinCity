@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getFloodData } from "../Services/FloodService";
+import { getFloodData } from "../service/FloodService";
 
 function RiskAreas() {
   const [areas, setAreas] = useState([]);

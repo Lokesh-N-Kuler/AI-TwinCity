@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getEmergencyData } from "../Services/EmergencyService";
+import { getEmergencyData } from "../service/EmergencyService";
 
 function EmergencyStats() {
   const [data, setData] = useState(null);

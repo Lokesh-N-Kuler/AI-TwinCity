@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getFloodData } from "../Services/FloodService";
+import { getFloodData } from "../service/FloodService";
 
 function FloodStats() {
   const [data, setData] = useState(null);

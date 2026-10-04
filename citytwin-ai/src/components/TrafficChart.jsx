@@ -9,7 +9,7 @@ import {
   CartesianGrid,
 } from "recharts";
 
-import { getTrafficChart } from "../Services/trafficService";
+import { getTrafficChart } from "../service/trafficService";
 import "../styles/chart.css";
 
 function TrafficChart() {

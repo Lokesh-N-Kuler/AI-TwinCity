@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getAnalyticsData } from "../service/analyticsService";
 
 function AICityInsights() {
   const [insights, setInsights] = useState([]);
@@ -6,19 +7,16 @@ function AICityInsights() {
   useEffect(() => {
     const loadInsights = async () => {
       try {
-        const response = await fetch(
-          `${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/analytics/`
+        const result = await getAnalyticsData();
+
+        setInsights(
+          Array.isArray(result.insights)
+            ? result.insights
+            : []
         );
-
-        if (!response.ok) {
-          throw new Error("Unable to fetch insights");
-        }
-
-        const result = await response.json();
-
-        setInsights(result.insights || []);
       } catch (error) {
         console.error("Analytics insights error:", error);
+        setInsights([]);
       }
     };
 
@@ -34,7 +32,9 @@ function AICityInsights() {
       <div className="ai-city-header">
         <div>
           <h2>City Performance Insights</h2>
-          <p>Live analysis from connected city data sources</p>
+          <p>
+            Live analysis from connected city data sources
+          </p>
         </div>
 
         <span className="ai-city-badge">
@@ -46,7 +46,9 @@ function AICityInsights() {
         {insights.length === 0 ? (
           <div className="insight-item">
             <span className="insight-number">1</span>
-            <p>Waiting for live analytics data...</p>
+            <p>
+              Waiting for live analytics data...
+            </p>
           </div>
         ) : (
           insights.map((insight, index) => (

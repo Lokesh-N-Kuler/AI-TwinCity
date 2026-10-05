@@ -85,10 +85,9 @@ function Flood() {
 
       <div className="flood-grid">
 
-        <FloodChart
-          data={floodData.chart_data || []}
-          waterLevelSource={floodData.water_level_source}
-        />
+       <FloodChart
+  data={floodData.chart_data || []}
+/>
 
         <RiskAreas
           areas={floodData.risk_areas || []}

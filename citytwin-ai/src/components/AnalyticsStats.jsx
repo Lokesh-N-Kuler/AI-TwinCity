@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getAnalyticsData } from "../service/analyticsService";
 
 function AnalyticsStats() {
   const [data, setData] = useState(null);
@@ -6,16 +7,7 @@ function AnalyticsStats() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await fetch(
-          `${import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"}/api/analytics/`
-        );
-
-        if (!response.ok) {
-          throw new Error("Unable to fetch analytics");
-        }
-
-        const result = await response.json();
-
+        const result = await getAnalyticsData();
         setData(result);
       } catch (error) {
         console.error("Analytics stats error:", error);

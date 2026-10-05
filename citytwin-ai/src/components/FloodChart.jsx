@@ -9,12 +9,18 @@ import {
   CartesianGrid
 } from "recharts";
 
+
 function formatTime(value) {
+
   if (!value) {
     return "";
   }
 
   const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
 
   return date.toLocaleTimeString("en-IN", {
     hour: "2-digit",
@@ -22,80 +28,122 @@ function formatTime(value) {
   });
 }
 
-function FloodChart({ data, waterLevelSource }) {
+
+function FloodChart({ data }) {
+
+  const chartData = Array.isArray(data)
+    ? data
+    : [];
+
+  const hasRainfall = chartData.some(
+    (item) =>
+      item.rainfall !== null &&
+      item.rainfall !== undefined
+  );
+
+  const hasDischarge = chartData.some(
+    (item) =>
+      item.river_discharge !== null &&
+      item.river_discharge !== undefined
+  );
+
+
   return (
     <div className="flood-chart-card">
 
       <div className="chart-heading">
 
         <div>
-          <h2>Rainfall & Water Level</h2>
+          <h2>Rainfall & River Discharge</h2>
 
           <p>
-            Hourly environmental monitoring
+            Environmental and river monitoring
           </p>
         </div>
 
         <span className="chart-source-status">
-          {waterLevelSource
-            ? "Live sensor data"
-            : "Water-level sensor unavailable"}
+          {hasDischarge
+            ? "Live environmental data"
+            : "Rainfall data available"}
         </span>
 
       </div>
 
-      <ResponsiveContainer width="100%" height={300}>
 
-        <LineChart data={data}>
+      {chartData.length === 0 ? (
 
-          <CartesianGrid strokeDasharray="3 3" />
+        <div className="flood-chart-empty">
+          No flood chart data available.
+        </div>
 
-          <XAxis
-            dataKey="time"
-            tickFormatter={formatTime}
-          />
+      ) : (
 
-          <YAxis />
+        <ResponsiveContainer
+          width="100%"
+          height={300}
+        >
 
-          <Tooltip
-            labelFormatter={formatTime}
-          />
+          <LineChart data={chartData}>
 
-          <Legend />
+            <CartesianGrid
+              strokeDasharray="3 3"
+            />
 
-          <Line
-            type="monotone"
-            dataKey="rainfall"
-            stroke="#2563eb"
-            strokeWidth={3}
-            dot={false}
-            name="Rainfall (mm)"
-          />
+            <XAxis
+              dataKey="time"
+              tickFormatter={formatTime}
+            />
 
-          <Line
-            type="monotone"
-            dataKey="water_level"
-            stroke="#ef4444"
-            strokeWidth={3}
-            dot={false}
-            name="Water Level (m)"
-            connectNulls={false}
-          />
+            <YAxis />
 
-        </LineChart>
+            <Tooltip
+              labelFormatter={formatTime}
+            />
 
-      </ResponsiveContainer>
+            <Legend />
 
-      {!waterLevelSource && (
+
+            {hasRainfall && (
+              <Line
+                type="monotone"
+                dataKey="rainfall"
+                stroke="#2563eb"
+                strokeWidth={3}
+                dot={false}
+                name="Rainfall (mm)"
+              />
+            )}
+
+
+            {hasDischarge && (
+              <Line
+                type="monotone"
+                dataKey="river_discharge"
+                stroke="#ef4444"
+                strokeWidth={3}
+                dot={false}
+                name="River Discharge"
+                connectNulls
+              />
+            )}
+
+          </LineChart>
+
+        </ResponsiveContainer>
+
+      )}
+
+
+      {!hasDischarge && chartData.length > 0 && (
         <p className="chart-note">
-          Water-level values are not fabricated. Connect an
-          actual water-level/river sensor source to display
-          this series.
+          River discharge data is currently unavailable.
+          The rainfall series is shown using live weather data.
         </p>
       )}
 
     </div>
   );
 }
+
 
 export default FloodChart;

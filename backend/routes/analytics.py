@@ -514,7 +514,12 @@ def calculate_flood_indicator(flood_data):
 
     normalized = risk.strip().lower()
 
-    if normalized in ["low", "safe", "normal"]:
+    if normalized in [
+        "very low",
+        "low",
+        "safe",
+        "normal"
+    ]:
         score = 100
 
     elif normalized in [
@@ -531,11 +536,17 @@ def calculate_flood_indicator(flood_data):
         score = 50
 
     elif normalized in [
+        "very high",
         "critical",
-        "severe",
-        "very high"
+        "severe"
     ]:
         score = 25
+
+    elif normalized in [
+        "extreme",
+        "extreme risk"
+    ]:
+        score = 0
 
     else:
         return {
@@ -549,7 +560,6 @@ def calculate_flood_indicator(flood_data):
         "status": risk,
         "riskLevel": risk,
     }
-
 
 def calculate_emergency_indicator(emergency):
     if not emergency:
